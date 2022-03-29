@@ -89,7 +89,7 @@ Kemudian atur property clear pada CSS seperti berikut : <br>
 Ini adalah hasil dari sintaks diatas :
 ![Gambar 2](screenshot/ss2.PNG) <br>
 
-## A. Membuat Layout Sederhana
+## B. Membuat Layout Sederhana
 ### 1. Membuat File HTML
 Buatlah dokumen HTML seperti contoh dibawah ini : <br>
 ```
@@ -170,9 +170,6 @@ Buatlah dokumen file CSS dengan nama style_layout.css dengan sintaks seperti con
 ```
 <br>
 
-Ini adalah hasil refresh dari sintaks diatas :
-![Gambar 4](screenshot/ss4.PNG) <br>
-
 ### 3. Membuat Navigasi
 Mengatur navigasi pada file CSS dengan sintaks seperti contoh dibawah ini : <br>
 ```
@@ -195,6 +192,45 @@ Mengatur navigasi pada file CSS dengan sintaks seperti contoh dibawah ini : <br>
     nav a:hover {
         background-color: #0ca878;
     }
+```
+<br>
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 4](screenshot/ss4.PNG) <br>
+
+### 4. Membuat Hero Panel
+Buat hero panel dengan menambahkan sintaks HTML seperti dibawah ini : <br>
+```
+   <section id="hero">
+        <h1>Hello Sunshine!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+            elit, iaculis innisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, 
+            vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+            pretium ac.</p>
+        <a href="home.html" class="btn btn-large"> Learn more &raquo;</a>
+    </section>
+```
+<br>
+
+Kemudian tambahkan file CSS seperti dibawah ini : <br>
+```
+   /* HERO PANEL */
+#hero {
+    background-color: #e4e4e5;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+#hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
 ```
 <br>
 
