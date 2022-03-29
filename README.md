@@ -85,6 +85,7 @@ Kemudian atur property clear pada CSS seperti berikut : <br>
         float: none;        
     }
 ```
+<br>
 
 Ini adalah hasil dari sintaks diatas :
 ![Gambar 2](screenshot/ss2.PNG) <br>
@@ -321,8 +322,112 @@ Kemudian tambahkan sintaks CSS seperti dibawah ini : <br>
         line-height: 25px;
     }
 ```
+<br>
 
 Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 6](screenshot/ss6.PNG) <br>
+
+### 7. Mengatur Footer
+Mengatur footer dengan sintaks css seperti dibawah ini : <br>
+```
+    /* FOOTER */
+    footer {
+        clear: both;
+        background-color: #1d1d1d;
+        padding: 20px;
+        color: #eee;
+    }  
+```
+<br>
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 7](screenshot/ss7.PNG) <br>
+
+### 8. Menambahkan Elemen Lainnya pada Main Content
+Menambahkan elemen lain dengan sintaks css seperti dibawah ini : <br>
+```
+<section id="main">
+    <div class="row">
+        <div class="box">
+            <img src="https://dummyimage.com/120/e9967a/fff.png" alt="" class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+                euismod.</p>
+            <a href="#" class="btn btn-default">View Detail</a>
+        </div>
+        <div class="box">
+            <img src="https://dummyimage.com/120/98b3cd/fff.png" alt="" class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+                euismod.</p>
+            <a href="#" class="btn btn-default">View Detail</a>
+        </div>
+        <div class="box">
+            <img src="https://dummyimage.com/120/dddd88/fff.png"  alt="" class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+                euismod.</p>
+            <a href="#" class="btn btn-default">View Detail</a>
+        </div> 
+    </div>
+</section>
+```
+<br>
+
+Kemudian tambahkan sintaks pada CSS seperti dibawah ini : <br>
+```
+    /* BOX */
+    .box {
+        display: block;
+        float: left;
+        width: 33.333333%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .box h3 {
+        margin: 15px 0px;
+    }
+
+    .box p {
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .box img {
+        border: 0;
+        vertical-align: middle;
+    }
+
+    .image-circle {
+        border-radius: 50%;
+    }
+
+    .row {
+        margin: 0 -10px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    .row:after, .row:before,
+    .entry:after, .entry:before {
+    content:'';
+    display:table;
+    }
+    .row:after,
+    .entry:after {
+    clear:both;
+    }
+```
+<br>
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 8](screenshot/ss8.PNG) <br>
+
 
 
