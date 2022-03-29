@@ -114,7 +114,7 @@ Buatlah dokumen HTML seperti contoh dibawah ini : <br>
 ```
 <br>
 
-Kemudian tambahkan sintaks kode seperti dibawah ini : <br>
+Kemudian tambahkan sintaks html seperti dibawah ini : <br>
 ```
     <nav>
         <a href="home.html" class="active">HOME</a>
@@ -215,23 +215,23 @@ Buat hero panel dengan menambahkan sintaks HTML seperti dibawah ini : <br>
 
 Kemudian tambahkan file CSS seperti dibawah ini : <br>
 ```
-   /* HERO PANEL */
-#hero {
-    background-color: #e4e4e5;
-    padding: 50px 20px;
-    margin-bottom: 20px;
-}
+    /* HERO PANEL */
+    #hero {
+        background-color: #e4e4e5;
+        padding: 50px 20px;
+        margin-bottom: 20px;
+    }
 
-#hero h1 {
-    margin-bottom: 20px;
-    font-size: 35px;
-}
+    #hero h1 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
 
-#hero p {
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 25px;
-}
+    #hero p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 25px;
+    }
 ```
 <br>
 
@@ -261,7 +261,7 @@ Untuk mengatur main content dan sidebar, tambahkan sintaks css seperti dibawah i
 <br>
 
 ### 6. Membuat Sidebar Widget
-Tambahkan element lain pada sidebar dengan sintaks css seperti dibawah ini : <br>
+Tambahkan element lain pada sidebar dengan sintaks html seperti dibawah ini : <br>
 ```
     <aside id="sidebar">
         <div class="widget-box">
@@ -344,7 +344,7 @@ Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 7](screenshot/ss7.PNG) <br>
 
 ### 8. Menambahkan Elemen Lainnya pada Main Content
-Menambahkan elemen lain dengan sintaks css seperti dibawah ini : <br>
+Menambahkan elemen lain dengan sintaks html seperti dibawah ini : <br>
 ```
 <section id="main">
     <div class="row">
@@ -428,6 +428,69 @@ Kemudian tambahkan sintaks pada CSS seperti dibawah ini : <br>
 
 Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 8](screenshot/ss8.PNG) <br>
+
+### 9. Menambahkan Content Artikel
+Menambahkan content artikel sebelum `</section>` dengan sintaks html seperti dibawah ini : <br>
+```
+    <hr class="divider">
+        <article class="entry">
+            <h2>First Featurette Heading</h2>
+            <img src="https://dummyimage.com/150/94d194/fff.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+                elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, 
+                vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+              pretium ac.</p>
+        </article>
+    <hr class="divider">
+        <article class="entry">
+            <h2>First Featurette Heading</h2>
+            <img src="https://dummyimage.com/150/94d194/fff.png" alt="" class="right-img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+                elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, 
+                vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+                pretium ac.</p>
+        </article>
+```
+<br>
+
+Kemudian tambahkan sintaks pada CSS seperti dibawah ini : <br>
+```
+    .divider {
+        border: 0;
+        border-top: 1px solid #eee;
+        margin: 40px 0;
+    }
+
+    /* ENTRY */
+    .entry {
+        margin: 15px 0px;
+    }
+
+    .entry h2 {
+        margin-bottom: 20px;
+    }
+
+    .entry p {
+        line-height: 25px;
+    }
+
+    .entry img {
+        float: left;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
+
+    .entry .right-img {
+        float: right;
+        margin-left: 15px;
+    }
+```
+<br>
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 9](screenshot/ss9.PNG) <br>
+
+
 
 
 
