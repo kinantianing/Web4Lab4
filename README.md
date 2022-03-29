@@ -237,3 +237,92 @@ Kemudian tambahkan file CSS seperti dibawah ini : <br>
 Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 5](screenshot/ss5.PNG) <br>
 
+### 5. Mengatur Layout dan Sidebar
+Untuk mengatur main content dan sidebar, tambahkan sintaks css seperti dibawah ini : <br>
+```
+    /* MAIN CONTENT */
+    #wrapper {
+        margin: 0;
+    }
+    #main {
+        float: left;
+        width: 640px;
+        padding: 20px;
+    }
+
+    /* SIDEBAR AREA */
+    #sidebar {
+        float: left;
+        width: 260px;
+        padding: 20px;
+    }
+```
+<br>
+
+### 6. Membuat Sidebar Widget
+Tambahkan element lain pada sidebar dengan sintaks css seperti dibawah ini : <br>
+```
+    <aside id="sidebar">
+        <div class="widget-box">
+            <h3 class="title">Widget Header</h3>
+            <ul>
+                <li><a href="#">Widget Link</a></li>
+                <li><a href="#">Widget Link</a></li>
+                <li><a href="#">Widget Link</a></li>
+                <li><a href="#">Widget Link</a></li>
+                <li><a href="#">Widget Link</a></li>
+            </ul>
+        </div>
+        <div class="widget-box">
+            <h3 class="title">Widget Text</h3>
+            <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt 
+            arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis. Integer 
+            pharetra est nunc, nec pretium nunc pretium ac.</p>
+        </div>
+    </aside>
+```
+<br>
+
+Kemudian tambahkan sintaks CSS seperti dibawah ini : <br>
+```
+    /* WIDGET */
+    .widget-box {
+        border: 1px solid #eee;
+        margin-bottom: 20px;
+    }
+
+    .widget-box .title {
+        padding: 10px 16px;
+        background-color: #0ca878;
+        color: #fff;
+    }
+
+    .widget-box ul {
+        list-style-type: none;
+    }
+
+    .widget-box li {
+        border-bottom: 1px solid #eee;
+    }
+
+    .widget-box li a {
+        padding: 10px 16px;
+        color: #333;
+        display: block;
+        text-decoration: none;
+    }
+
+    .widget-box list-style:hover a {
+        background-color: #eee;
+    }
+
+    .widget-box p {
+        padding: 15px;
+        line-height: 25px;
+    }
+```
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 6](screenshot/ss6.PNG) <br>
+
+
