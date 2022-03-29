@@ -87,4 +87,4 @@ Kemudian atur property clear pada CSS seperti berikut : <br>
 ```
 
 Ini adalah hasil dari sintaks diatas :
-![Gambar 1](screenshot/ss1.PNG) <br>
+![Gambar 2](screenshot/ss2.PNG) <br>
