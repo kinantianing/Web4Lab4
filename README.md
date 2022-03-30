@@ -725,11 +725,195 @@ footer {
 <br>
 
 ![Gambar 10](screenshot/ss10.PNG) <br>
-![Gambar 11](screenshot/ss10.PNG) <br>
-![Gambar 12](screenshot/ss10.PNG) <br>
+![Gambar 11](screenshot/ss11.PNG) <br>
+![Gambar 12](screenshot/ss12.PNG) <br>
 
 2. Tambahkan layout untuk menu Contact, yang berisi form isian: nama, email, message, dll ! <br>
-    Jawab : Berikut adalah sintaks nya : <br>
+    Jawab : <br>
+    
+Berikut adalah sintaks html nya : <br>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="style_contact.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+        <nav>
+            <a href="lab4_layout.html">HOME</a>
+            <a href="artikel.html">ARTIKEL</a>
+            <a href="lab4_about.html">ABOUT</a>
+            <a href="lab4_contact.html" class="active">KONTAK</a>
+        </nav>
+        <section id="hero">
+            <h1>Contact</h1>
+                <form action="proses.php" method="post">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama"  placeholder="Masukan Nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email"  placeholder="Masukan E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="Web">Website URL</label>
+                            <input type="web" id="web"  placeholder="Masukan Website URL">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea  rows="10" placeholder="Masukan Pesan"></textarea>
+                        </div>
+                            <button type="submit" class="btn btn-danger">Kirim Pesan</button>
+                    </fieldset>
+                </form>
+        </section>
+        <footer>
+            <p>&copy; 2022 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+<br>
+
+Berikut adalah sintaks css nya : <br>
+```
+/* RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5a5a;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #ccc;
+}
+
+/* HEADER*/
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 20px 10px;
+    color: #a0a0a0;
+}
+
+/* NAV */
+nav {
+    display: block;
+    background-color: #bebebe;
+}
+
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #0ca878;
+}
+
+/* HERO PANEL */
+#hero {
+    background-color: #e4e4e5;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+legend {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* INPUT */
+input {
+    width: 99%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+    margin-top: 25px;
+    margin-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    margin-left: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    width: 97%;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    width: 97%;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button[type=submit] {
+    margin-left: 25px;
+    padding: 10px 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    background-color: #0ca878;
+    border: 1px solid #197a43;
+    color: #fff;  
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* FOOTER */
+footer {
+    clear: both;
+    background-color: #1d1d1d;
+    padding: 20px;
+    color: #eee;
+}
+
+```
+<br>
+
+![Gambar 13](screenshot/ss13.PNG) <br>
+![Gambar 14](screenshot/ss14.PNG) <br>
 
 
 
