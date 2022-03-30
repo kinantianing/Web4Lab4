@@ -491,6 +491,246 @@ Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 9](screenshot/ss9.PNG) <br>
 
 
+## SOAL
+
+### Pertanyaan dan Tugas
+
+1. Tambahkan Layout untuk menu About, buat single layout yang berisi deskripsi, portfolio, dll ! <br>
+    Jawab : <br>
+
+Berikut adalah sintaks html nya : <br>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="style_about.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+             <h1>Layout Sederhana</h1>
+        </header>
+        <nav>
+            <a href="lab4_layout.html" >HOME</a>
+            <a href="artikel.html">ARTIKEL</a>
+            <a href="lab4_about.html" class="active">ABOUT</a>
+            <a href="lab4_contact.html">KONTAK</a>
+        </nav>
+        <section id="hero">
+            <img src="https://dummyimage.com/120/0ca878/fff.png" alt="" class="image-circle">
+            <h3>TITLE</h3>
+            <p>Donec sed odio dui.</p>
+        </section>
+        <section id="main">
+            <div class="about">
+                <h1>ABOUT US</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+                    elit, iaculis innisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,                         vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+                    pretium ac.</p>
+            </div>
+        </section>
+        <section id="portopolio">
+            <div class="row">
+                <h3>PORTOFOLIO</h3>
+                <div class="box">
+                    <img src="https://dummyimage.com/250x150/e9967a/fff.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="https://dummyimage.com/250x150/94d194/fff.png" alt="" >
+                </div>
+                <div class="box">
+                    <img src="https://dummyimage.com/250x150/dddd88/fff.png"  alt="" >
+                </div>
+                <div class="box">
+                    <img src="https://dummyimage.com/250x150/94d194/fff.png" alt="" >
+                </div>
+                <div class="box">
+                    <img src="https://dummyimage.com/250x150/dddd88/fff.png"  alt="" >
+                </div>
+                <div class="box">
+                    <img src="https://dummyimage.com/250x150/e9967a/fff.png" alt="">
+                </div>  
+            </div>
+        <footer>
+            <p>&copy; 2022 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+<br>
+
+Berikut adalah sintaks css nya : <br>
+```
+/* RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5a5a;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #ccc;
+}
+
+/* HEADER*/
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 20px 10px;
+    color: #a0a0a0;
+}
+
+/* NAV */
+nav {
+    display: block;
+    background-color: #bebebe;
+}
+
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #0ca878;
+}
+
+
+/* HERO PANEL */
+#hero {
+    padding: 50px 15px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#hero h3 {
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#hero p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    text-align: center;
+}
+#hero img {
+    border: 0;
+    vertical-align: middle;
+    margin-left: 44%;
+}
+
+.image-circle {
+    border-radius: 50%;
+}
+
+/** about **/
+
+.about {
+    padding: 80px 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #e4e4e5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about h1 {
+    margin: 15px 0px;
+    font-size: 25px;
+}
+
+.about p {
+    line-height: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    background-color: #1d1d1d;
+    padding: 20px;
+    color: #eee;
+}
+
+/* BOX */
+.box {
+    display: block;
+    float: left;
+    width: 33.333333%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.box img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.row {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 50px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.row:after, .row:before,
+.entry:after, .entry:before {
+ content:'';
+ display:table;
+}
+.row:after,
+.entry:after {
+ clear:both;
+}
+
+```
+<br>
+
+![Gambar 10](screenshot/ss10.PNG) <br>
+![Gambar 11](screenshot/ss10.PNG) <br>
+![Gambar 12](screenshot/ss10.PNG) <br>
+
+2. Tambahkan layout untuk menu Contact, yang berisi form isian: nama, email, message, dll ! <br>
+    Jawab : Berikut adalah sintaks nya : <br>
+
 
 
 
