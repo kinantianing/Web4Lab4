@@ -495,8 +495,9 @@ Ini adalah hasil refresh dari sintaks diatas :
 
 ### Pertanyaan dan Tugas
 
-1. Tambahkan Layout untuk menu About, buat single layout yang berisi deskripsi, portfolio, dll ! <br>
-    Jawab : <br>
+
+### 1. Tambahkan Layout untuk menu About, buat single layout yang berisi deskripsi, portfolio, dll ! <br>
+Jawab : <br>
 
 Berikut adalah sintaks html nya : <br>
 ```
@@ -727,9 +728,11 @@ footer {
 ![Gambar 10](screenshot/ss10.PNG) <br>
 ![Gambar 11](screenshot/ss11.PNG) <br>
 ![Gambar 12](screenshot/ss12.PNG) <br>
+<br>
 
-2. Tambahkan layout untuk menu Contact, yang berisi form isian: nama, email, message, dll ! <br>
-    Jawab : <br>
+
+### 2. Tambahkan layout untuk menu Contact, yang berisi form isian: nama, email, message, dll ! <br>
+Jawab : <br>
     
 Berikut adalah sintaks html nya : <br>
 ```
