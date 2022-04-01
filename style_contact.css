@@ -1,0 +1,119 @@
+/* RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5a5a;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #ccc;
+}
+
+/* HEADER*/
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 20px 10px;
+    color: #a0a0a0;
+}
+
+/* NAV */
+nav {
+    display: block;
+    background-color: #bebebe;
+}
+
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #0ca878;
+}
+
+/* HERO PANEL */
+#hero {
+    background-color: #e4e4e5;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+legend {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* INPUT */
+input {
+    width: 99%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+    margin-top: 25px;
+    margin-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    margin-left: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    width: 97%;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    width: 97%;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button[type=submit] {
+    margin-left: 25px;
+    padding: 10px 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    background-color: #0ca878;
+    border: 1px solid #197a43;
+    color: #fff;  
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* FOOTER */
+footer {
+    clear: both;
+    background-color: #1d1d1d;
+    padding: 20px;
+    color: #eee;
+}
