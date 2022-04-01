@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="style_contact.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+        <nav>
+            <a href="lab4_layout.html">HOME</a>
+            <a href="artikel.html">ARTIKEL</a>
+            <a href="lab4_about.html">ABOUT</a>
+            <a href="lab4_contact.html" class="active">KONTAK</a>
+        </nav>
+        <section id="hero">
+            <h1>Contact</h1>
+                <form action="proses.php" method="post">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama"  placeholder="Masukan Nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email"  placeholder="Masukan E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="Web">Website URL</label>
+                            <input type="web" id="web"  placeholder="Masukan Website URL">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea  rows="10" placeholder="Masukan Pesan"></textarea>
+                        </div>
+                            <button type="submit" class="btn btn-danger">Kirim Pesan</button>
+                    </fieldset>
+                </form>
+        </section>
+        <footer>
+            <p>&copy; 2022 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
